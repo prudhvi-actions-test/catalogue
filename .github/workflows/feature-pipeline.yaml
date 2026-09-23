@@ -1,7 +1,11 @@
 name: feature-pipeline
 
-on: workflow_dispatch
-
+on: [push]
+permissions:
+  contents: read
+  statuses: write
+  security-events: read
+  
 jobs:
   feature-caller:
     # uses: PrudhviMV/workflows/.github/workflows/feature-nodejs-pipeline.yaml@main
