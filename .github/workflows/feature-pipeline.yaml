@@ -6,8 +6,6 @@ permissions:
   statuses: write
   security-events: read
   
-
-  
 jobs:
   feature-caller:
     # permissions:
